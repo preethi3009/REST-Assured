@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -25,7 +27,7 @@ public class TestExamples {
 		
 		int statusCode = response.getStatusCode();
 		
-		Assert.assertEquals(statusCode,200 ); 
+		AssertJUnit.assertEquals(statusCode,200 ); 
 		
 	}
 	

@@ -4,8 +4,6 @@ import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-//ctrl+shift+o removes all unused imports
-
 import org.testng.annotations.Test;
 
 public class JSONSchemaValidator {

@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.annotations.Test;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
@@ -12,6 +13,7 @@ import io.restassured.http.ContentType;
 public class PutPatchDeleteExamples {
 	
 //	@Test
+	@Test
 	public void testPut() {
 		
 		JSONObject request = new JSONObject();
@@ -37,6 +39,7 @@ public class PutPatchDeleteExamples {
 
 
 	//@Test
+	@Test
 	public void testPatch() {
 		
 		JSONObject request = new JSONObject();

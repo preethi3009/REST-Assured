@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-02T11:57:54 IST" name="Default suite" finished-at="2021-03-02T11:57:57 IST" duration-ms="2587">
+  <suite started-at="2021-03-02T20:00:01 IST" name="Default suite" finished-at="2021-03-02T20:00:02 IST" duration-ms="1133">
     <groups>
     </groups>
-    <test started-at="2021-03-02T11:57:54 IST" name="Default test" finished-at="2021-03-02T11:57:57 IST" duration-ms="2587">
-      <class name="tests.XMLSchemaValidation">
-        <test-method signature="schemaValidation()[pri:0, instance:tests.XMLSchemaValidation@1ffe63b9]" started-at="2021-03-02T11:57:54 IST" name="schemaValidation" finished-at="2021-03-02T11:57:57 IST" duration-ms="2557" status="PASS">
+    <test started-at="2021-03-02T20:00:01 IST" name="Default test" finished-at="2021-03-02T20:00:02 IST" duration-ms="1133">
+      <class name="tests.TestsOnLocalAPI">
+        <test-method signature="put()[pri:0, instance:tests.TestsOnLocalAPI@159f197]" started-at="2021-03-02T20:00:01 IST" name="put" finished-at="2021-03-02T20:00:02 IST" duration-ms="1104" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- schemaValidation -->
-      </class> <!-- tests.XMLSchemaValidation -->
+        </test-method> <!-- put -->
+      </class> <!-- tests.TestsOnLocalAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
