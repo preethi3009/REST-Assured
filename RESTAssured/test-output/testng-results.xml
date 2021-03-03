@@ -2,23 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-03T14:05:20 IST" name="Suite" finished-at="2021-03-03T14:05:21 IST" duration-ms="1143">
+  <suite started-at="2021-03-03T21:48:53 IST" name="Default suite" finished-at="2021-03-03T21:48:55 IST" duration-ms="1768">
     <groups>
     </groups>
-    <test started-at="2021-03-03T14:05:20 IST" name="Test" finished-at="2021-03-03T14:05:21 IST" duration-ms="1143">
-      <class name="tests.DataDrivenExamples">
-        <test-method signature="deleteParametersExample(int)[pri:0, instance:tests.DataDrivenExamples@6e0dec4a]" started-at="2021-03-03T14:05:20 IST" name="deleteParametersExample" finished-at="2021-03-03T14:05:21 IST" duration-ms="1117" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2021-03-03T21:48:53 IST" name="Default test" finished-at="2021-03-03T21:48:55 IST" duration-ms="1768">
+      <class name="tests.DataFromExcel">
+        <test-method signature="post()[pri:0, instance:tests.DataFromExcel@6580cfdd]" started-at="2021-03-03T21:48:53 IST" name="post" finished-at="2021-03-03T21:48:55 IST" duration-ms="1738" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteParametersExample -->
-      </class> <!-- tests.DataDrivenExamples -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- post -->
+      </class> <!-- tests.DataFromExcel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

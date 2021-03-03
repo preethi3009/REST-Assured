@@ -33,7 +33,7 @@ public class DataDrivenExamples extends TestData{
 			log().all();	
 	}
 	
-	//@Test(dataProvider = "DataForDelete")
+	@Test(dataProvider = "DataForDelete")
 	public void delete(int userId) {
 		
 		baseURI = "http://localhost:3000";
@@ -47,7 +47,7 @@ public class DataDrivenExamples extends TestData{
 	}
 	
 	@Parameters({"userId"})
-	@Test
+	//@Test
 	public void deleteParametersExample(int userId) {
 		
 		System.out.println(userId);

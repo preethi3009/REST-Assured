@@ -12,20 +12,20 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 
-	//	static XSSFWorkbook workbook;
-	//	static XSSFSheet sheet; 
+		static XSSFWorkbook workbook;
+		static XSSFSheet sheet; 
 
-	static HSSFWorkbook workbook;
-	static HSSFSheet sheet;
+//	static HSSFWorkbook workbook;
+//	static HSSFSheet sheet;
 
 	public ExcelUtils(String excelPath, String sheetName) {
 
 		try {
 
-			//			workbook = new XSSFWorkbook(excelPath); //XSSFWorkbook works for .xlsx files
+			workbook = new XSSFWorkbook(excelPath); //XSSFWorkbook works for .xlsx files
 
-			InputStream file = new FileInputStream(excelPath); 
-			workbook = new HSSFWorkbook(file);               	// HSSFWorkbook for .xls files
+//			InputStream file = new FileInputStream(excelPath); 
+//			workbook = new HSSFWorkbook(file);               	// HSSFWorkbook for .xls files
 			sheet = workbook.getSheet(sheetName);				//get sheet
 
 		} catch (Exception e) {
@@ -37,7 +37,8 @@ public class ExcelUtils {
 		}
 	}
 
-	public static void getRowCount() {
+	//public static void
+	public static int getRowCount() {
 
 		//To get Project directory path
 		//String projDir = System.getProperty("user.dir");
@@ -48,12 +49,14 @@ public class ExcelUtils {
 		//			XSSFWorkbook workbook = new XSSFWorkbook(excelPath);
 		//			XSSFSheet sheet = workbook.getSheet("Sheet1");		
 
-		int rowCount = sheet.getPhysicalNumberOfRows(); //get number of rows
-//		System.out.println(rowCount);
+//		int rowCount = sheet.getPhysicalNumberOfRows(); //get number of rows
+		
+		return sheet.getPhysicalNumberOfRows(); 
 
 	}
 
-	public static void getCellData(int rowNum, int colNum) {
+	//public static void
+	public static Object getCellData(int rowNum, int colNum) {
 
 		//			String excelPath = "./Data/TestData.xlsx";
 		//
@@ -66,8 +69,7 @@ public class ExcelUtils {
 		DataFormatter formatter = new DataFormatter();
 		Object value = formatter.formatCellValue(sheet.getRow(rowNum).getCell(colNum)); //gets any data type
 
-//		System.out.println(value);
-	
+		return value;
 	}
 
 }

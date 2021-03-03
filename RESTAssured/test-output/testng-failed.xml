@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.DataDrivenExamples">
         <methods>
-          <include name="post"/>
+          <include name="delete" invocation-numbers="9"/>
         </methods>
       </class> <!-- tests.DataDrivenExamples -->
     </classes>
